@@ -1,0 +1,712 @@
+
+/*
+colors used on the website:
+    #3ea2ca
+    #FFFF
+    #f09e78
+
+fonts used on the website:
+playlist
+lato
+*/
+
+
+/*Imported fonts*/
+@font-face {
+  font-family: "playlist"; 
+  src: url('playlist.ttf');
+}
+
+@font-face{
+  font-family: "lato";
+  src: url("lato.ttf");
+}
+
+/* Overall design, based on mobile first */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: 200;
+    color:#3ea2ca;
+}
+
+/*Header starts here*/
+header {
+  background:  url("header.jpg") center center no-repeat; 
+  background-size: cover;
+  height: 400px;
+  text-align: center; 
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+	  right: 0;
+    bottom: 0;
+    left: 0;
+    height:400px;
+    background-image:linear-gradient(to bottom right, #f09e78,#7dbed8 );
+    opacity: .8;    
+}
+
+header .container {
+  position: relative;
+  top: 130px;
+}
+
+h1 {
+  color: white;
+  font-family: "playlist";
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+header .container h2{
+padding-bottom:1em;
+}
+
+h1 a:link, h1 a:visited, h1 a:focus, h1 a:active {
+  text-decoration: none;
+  color:white;
+} 
+/* Header finnish here*/
+
+
+/*navigation starts here*/
+nav {
+  overflow: hidden;
+  background:#3ea2ca;
+  opacity:0.7;
+}
+
+nav a {
+  float: left;
+  text-align: center;
+  display: block;
+  color: #ffff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background:#3ea2ca;
+  color: white;
+}  
+
+nav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size:20px;
+    font-family:"lato";
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #4c79af;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+select{
+  color:#4c79af;
+  font-family: "lato";
+  font-size: 15px;
+  width: 50%
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*navigation ends here*/
+
+
+/*Main starts here*/
+main h2, .board h2, section h2 {
+  color: #3ea2ca; 
+  }
+
+
+h2{
+  color: white;
+  font-family:"lato";
+  font-size: 23px;
+}
+
+h3 {
+  font-family: "lato";
+  font-size: 20px;
+  color: #3ea2ca; 
+}
+
+h4{
+  font-family: "lato";
+  color: #3ea2ca; 
+  text-decoration: bold;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+p {
+  font-family: "lato";
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+  .btn:hover {  
+    background: #117bff;
+    cursor: pointer; 
+    list-style: none;
+  }
+
+  .services article, .treatment article{
+    border: 1px solid #3ea2ca;
+    width: 97%;
+    margin-top:1em;
+    overflow: auto;
+    padding-bottom:10%;
+    margin-bottom: 10%;
+  }
+
+.services img {
+  float: left;
+  margin: 1em;
+  width: 30%;
+} 
+
+.services h3, .services h4, .services p,
+.treatment h3, .treatment h4, .treatment p{
+text-align: center;
+margin:1em;
+}
+
+main p, section p, label {
+    color: #3ea2ca; 
+    overflow:scroll;
+}
+
+main section  {
+  margin: 10%;
+  }
+
+/*Main ends here*/
+
+
+/*Board starts here*/ 
+  .board {
+    background: url("boarder.jpg")  ;
+    background-size: cover;
+    text-align: center;
+    height: 250px; 
+    clear:left;
+    clear:right;
+  }
+
+  .board h3 {
+    color:white;
+  }
+ 
+  .board .container {
+    position: relative;
+    top: 90px;
+  }
+  
+  .board .btn {
+    margin: 10px 0 0;
+    opacity:0.75;
+  }
+/*Board ends here*/
+
+/*Footer starts here*/
+
+footer { 
+  background:#3ea2ca ;
+  text-align: center;
+ /* height: 130px; */
+  opacity:0.6;
+}
+
+footer p { 
+  color: #fff;
+  font-family: "playlist";
+  font-size: 15px;  
+  padding-bottom:1em;
+  margin: 0;
+}
+
+  .ikoner.ikoner-zoom .fa:hover, .ikoner.ikoner-zoom .fa:active { 
+    transform: scale(1.1); 
+  }
+
+  .ikoner .fa {
+    margin-top:20px;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    color:white;
+    font-size: 1.8em;
+  }
+
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .list-inline li {
+    display: inline-block;
+    padding: 0px 5px;
+  } 
+/*Footer ends here*/
+
+
+/*Specific classes goes here*/
+  .btn {
+    color:#3ea2ca;
+    background:white ;
+    padding: 8px 20px;
+    text-decoration: none; 
+    opacity:0.75;
+    border-radius: 10px;
+  }
+
+
+  .wrap, .treatment, .wedding, .services {
+	  width: 90%;
+	  margin: 4em auto;
+  }
+
+  .blog1, .blog2, .blog3, .blog4 {
+    border: 1px solid #3ea2ca;
+    width: 95%;
+    margin:1em;
+    overflow: auto;
+    padding-bottom:10%;
+    margin-bottom: 10%;
+  } 
+
+  .blog1 h3, .blog2 h3, .blog3 h3, .blog4 h3,
+  .blog1 p, .blog2 p, .blog3 p, .blog4 p, .frame h3 {
+    margin: 5%;
+  } 
+
+
+  .blog1 .btn, .blog2 .btn, .blog3 .btn, .blog4 .btn {
+    float: right;
+    margin-right:15%;
+    background: #3ea2ca;
+    color: white;
+  } 
+
+.blog1 img, .blog2 img,.blog3 img,.blog4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width:90%
+  }  
+
+  .main, .about, aside {
+	  width: 100%;
+  }
+
+  .about {
+    margin-bottom:10%;
+  }
+
+  .enquiry {
+    text-align: center;
+  }
+
+/*Frame starts here*/
+  .frame {
+    border: 1px solid #3ea2ca;
+    overflow: auto;
+    padding-bottom:10%;
+    margin-bottom: 10%;
+}
+
+  .frame h3, .frame p, .frame h4{
+    margin: 7% 15%;
+  } 
+
+  .frame .btn, .treatment .btn, .services .btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    background: #3ea2ca;
+    color: white;
+    text-align: center;
+    }
+    
+
+  .frame img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .frame #hens{
+    margin-top:10%;
+    width:50%;
+  }
+
+/*Frame ends here*/
+
+/*classes ends here*/
+
+
+/*Specific Ids goes here*/
+
+#skin h3 a:link, h3 a:visited{
+  color: #3ea2ca; 
+}
+
+#skin h3 a:hover{
+  color:white;
+}
+
+/*Ids end here*/
+
+
+/* Aside goes here*/
+aside{
+  text-align: center;
+}
+/*Aside ends here*/
+
+
+/*1st Breakpoint, design for tablet*/
+@media (min-width: 600px) {
+
+  h1 {
+  font-size: 55px;
+  line-height: 64px;
+}
+
+nav a {
+  float: left;
+  text-align: center;
+  display: block;
+  color: #ffff;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size:15px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 15px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.services .btn{
+  width:30%;
+  float:right;
+  margin-top:4em;
+  margin-right:1.5em;
+
+  }
+
+} 
+
+/*1 breakpoint for bigger screens*/
+  @media (min-width:800px){
+
+/*1st breakpoint header*/
+header{
+  height:600px;
+}
+  
+header .container{
+  top: 200px;
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:600px;
+  background-image:linear-gradient(to bottom right, #f09e78,#7dbed8 );
+  opacity: .8;    
+}
+
+nav a {
+  float: left;
+  text-align: center;
+  display: block;
+  color: #ffff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size:18px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+h1{
+  font-size: 90px;
+}
+  
+h2{
+  font-size: 45px;
+}
+
+/* 1st breakpoint Main*/  
+h3, footer p{
+  font-size: 30px;
+}
+  
+h4{
+  font-size: 25px;
+}
+  
+p{
+  font-size: 20px;
+}
+
+services img{
+  width:200px;
+  height: 200px;;
+  margin:20px;
+}
+
+.frame #hens{
+  margin: 2em;
+  width:30%;
+  float:left;
+}
+
+
+/*1st breakpoint board*/
+  .board{
+    height: 500px;
+    clear: left;
+  }
+  
+  .board .container{
+    position: relative;
+    top: 300px;
+  }
+  
+  .board h3{
+    font-size: 40px;
+  }
+
+.treatment h3, .treatment h4{
+  margin-top:3em;
+}
+  }
+
+/*1st breakpoint ends here*/
+
+
+/* 2nd breakpont for bigger screens starts here*/
+  @media only screen and (min-width: 1000px) {
+
+	.wrap, .services {
+		width: 90%;
+	}
+  
+
+  .blog1, .blog2, .blog3, .blog4 {
+    width: 45%;
+    height: 800px;
+    float:left;
+    margin-bottom:2em;
+  }
+
+  .services img{
+    margin:3em;
+  }
+
+  .main {
+		width: 60%;
+		float: left;
+  }
+
+  
+  
+aside {
+		width: 40%;
+		float: right;
+  }
+  .frame .btn{
+    float:right;
+    background: #3ea2ca;
+    color: white;
+   width:20%;
+   margin-right:15%;
+    }
+
+    .services .btn {
+      width:20%;
+      float:right;
+      margin-right:3em;
+      margin-top:10em;
+      }
+
+      .treatment .btn{
+        width:20%;
+      }
+
+}
+/*2nd breakpont ends here*/
+
+
+/*3rd breakpoint starts here*/
+@media only screen and (min-width: 1200px) {
+nav a {
+  float: left;
+  text-align: center;
+  display: block;
+  padding: 1em;
+  font-size: 22px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-size:22px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 22px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+}
+/*3rd breakpoint ends here*/
+   
+/*Breakpoint for design only for small screens*/
+@media screen and (max-width: 800px) {
+
+
+  nav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  nav.responsive {
+    position: relative;
+  }
+
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  nav.responsive .dropdown {
+    float: none;
+  }
+
+  nav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  nav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+  
+
+
+
+
+
