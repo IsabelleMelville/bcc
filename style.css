@@ -415,7 +415,10 @@ footer p {
 /* Aside goes here*/
 aside{
   text-align: center;
+
 }
+
+
 /*Aside ends here*/
 
 
@@ -603,6 +606,9 @@ services img{
   }
 
   
+aside p, aside h4{
+  padding: 8px 0 0 70px ;
+}
   
 aside {
 		width: 40%;
