@@ -306,12 +306,24 @@ footer p {
   .btn {
     color:#3ea2ca;
     background:white ;
-    padding: 8px 20px;
+    padding:11px;
     text-decoration: none; 
     opacity:0.75;
     border-radius: 10px;
   }
 
+  .services .btn{
+    /*  width:30%; 
+      float:right; */
+
+      margin:4em;
+      float: right;
+      background: #3ea2ca;
+      color: white;
+      text-align: center;
+
+  
+      }
 
   .wrap, .treatment, .wedding, .services {
 	  width: 90%;
@@ -372,7 +384,7 @@ footer p {
     margin: 7% 15%;
   } 
 
-  .frame .btn, .treatment .btn, .services .btn{
+  .frame .btn, .treatment .btn{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -459,13 +471,7 @@ nav a {
     margin: 0;
 }
 
-.services .btn{
-  width:30%;
-  float:right;
-  margin-top:4em;
-  margin-right:1.5em;
 
-  }
 
 } 
 
