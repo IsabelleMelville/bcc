@@ -32,6 +32,7 @@ body {
     font-family: 'lato', sans-serif;
     font-weight: 200;
     color:#3ea2ca;
+    margin:0;
 }
 
 /*Header starts here*/
@@ -57,6 +58,10 @@ header:before {
 header .container {
   position: relative;
   top: 130px;
+}
+
+header, main, aside, aside .container, footer{
+  overflow:auto;
 }
 
 h1 {
@@ -224,12 +229,12 @@ margin:1em;
 
 main p, section p, label {
     color: #3ea2ca; 
-    overflow:scroll;
+    overflow:scroll; 
 }
 
-main section  {
+/*main section  {
   margin: 10%;
-  }
+  } */
 
 /*Main ends here*/
 
@@ -254,7 +259,7 @@ main section  {
   }
   
   .board .btn {
-    margin: 10px 0 0;
+    margin-top: 10px;
     opacity:0.75;
   }
 /*Board ends here*/
@@ -264,7 +269,6 @@ main section  {
 footer { 
   background:#3ea2ca ;
   text-align: center;
- /* height: 130px; */
   opacity:0.6;
 }
 
@@ -281,23 +285,23 @@ footer p {
   }
 
   .ikoner .fa {
-    margin-top:20px;
+    padding:20px; 
     width: 40px;
     height: 40px;
     line-height: 20px;
     text-align: center;
     color:white;
-    font-size: 1.8em;
+    font-size: 2.5em;
   }
 
   .list-unstyled {
     padding-left: 0;
-    list-style: none;
-  }
+  
+  } 
 
   .list-inline li {
     display: inline-block;
-    padding: 0px 5px;
+  
   } 
 /*Footer ends here*/
 
@@ -311,6 +315,13 @@ footer p {
     opacity:0.75;
     border-radius: 10px;
   }
+.testimonials{
+  height: 300px;
+  text-align: center;
+}
+.testimonials h4{
+  padding-top: 100px;
+}
 
   .services .btn{
     /*  width:30%; 
@@ -360,12 +371,14 @@ footer p {
     width:90%
   }  
 
+/*
   .main, .about, aside {
 	  width: 100%;
-  }
+  } */
 
   .about {
-    margin-bottom:10%;
+    margin:10%;
+    text-align: center;
   }
 
   .enquiry {
@@ -380,9 +393,20 @@ footer p {
     margin-bottom: 10%;
 }
 
+.main .frame{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .frame p{
+  text-align: center;
+  margin:5%;
+}
+/*
   .frame h3, .frame p, .frame h4{
     margin: 7% 15%;
-  } 
+  } */
 
   .frame .btn, .treatment .btn{
     display: block;
@@ -427,9 +451,20 @@ footer p {
 /* Aside goes here*/
 aside{
   text-align: center;
+  background:#3ea2ca ;
+  opacity:0.6;
+  color:white;
+  height: 300px;
 
 }
+aside h4{
+  color:white;
+}
 
+aside .container{
+position: relative;
+top:80px;
+}
 
 /*Aside ends here*/
 
@@ -470,9 +505,6 @@ nav a {
     font-family: inherit;
     margin: 0;
 }
-
-
-
 } 
 
 /*1 breakpoint for bigger screens*/
@@ -500,26 +532,23 @@ header:before {
 }
 
 nav a {
-  float: left;
   text-align: center;
   display: block;
   color: #ffff;
   padding: 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
-
-
 
 .dropdown {
     float: left;
     overflow: hidden;
-    font-size:18px;
+    font-size:20px;
     text-decoration: none;
 }
 
 .dropdown .dropbtn {
-    font-size: 18px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: white;
@@ -569,14 +598,22 @@ services img{
     height: 500px;
     clear: left;
   }
-  
+
+  aside{
+    height:500px;
+  }
+
+aside .container{
+  position: relative;
+  top: 80px;
+}
   .board .container{
     position: relative;
-    top: 300px;
+    top: 250px;
   }
   
-  .board h3{
-    font-size: 40px;
+  .board h3, aside .container h4{
+    font-size: 30px;
   }
 
 .treatment h3, .treatment h4{
@@ -607,26 +644,37 @@ services img{
   }
 
   .main {
-		width: 60%;
-		float: left;
-  }
+    position: relative;
+    text-align: center;
+  } 
 
-  
-aside p, aside h4{
-  padding: 8px 0 0 70px ;
+
+.main .frame {
+  margin-right: auto;
+  margin-left: auto;
+  width: 65%;
+ 
 }
-  
-aside {
-		width: 40%;
-		float: right;
-  }
+
   .frame .btn{
     float:right;
     background: #3ea2ca;
     color: white;
-   width:20%;
-   margin-right:15%;
+    width:20%;
+    margin-right:15%;
     }
+/*
+    .main .frame .btn{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:60%;
+      background: #3ea2ca;
+      color: white;
+      text-align: center;
+      }*/
+      
+    
 
     .services .btn {
       width:20%;
@@ -646,26 +694,25 @@ aside {
 /*3rd breakpoint starts here*/
 @media only screen and (min-width: 1200px) {
 nav a {
-  float: left;
   text-align: center;
   display: block;
-  padding: 1em;
-  font-size: 22px;
+  padding: 2em;
+  font-size: 25px;
 }
 
 .dropdown {
     float: left;
     overflow: hidden;
-    font-size:22px;
+    font-size:25px;
     text-decoration: none;
 }
 
 .dropdown .dropbtn {
-    font-size: 22px;  
+    font-size: 25px;  
     border: none;
     outline: none;
     color: white;
-    padding: 1em;
+    padding: 2em;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
