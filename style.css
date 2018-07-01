@@ -41,6 +41,11 @@ header {
   background-size: cover;
   height: 400px;
   text-align: center; 
+  /*parallax*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header:before {
@@ -96,7 +101,7 @@ nav a {
   color: #ffff;
   padding: 10px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .active {
@@ -111,13 +116,13 @@ nav .icon {
 .dropdown {
     float: left;
     overflow: hidden;
-    font-size:20px;
+    font-size:18px;
     font-family:"lato";
     text-decoration: none;
 }
 
 .dropdown .dropbtn {
-    font-size: 20px;  
+    font-size: 18px;  
     border: none;
     outline: none;
     color: white;
@@ -247,6 +252,11 @@ main p, section p, label {
     height: 250px; 
     clear:left;
     clear:right;
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .board h3 {
@@ -513,6 +523,11 @@ nav a {
 /*1st breakpoint header*/
 header{
   height:600px;
+  /*parallax*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
   
 header .container{
@@ -529,6 +544,7 @@ header:before {
   height:600px;
   background-image:linear-gradient(to bottom right, #f09e78,#7dbed8 );
   opacity: .8;    
+
 }
 
 nav a {
@@ -597,6 +613,11 @@ services img{
   .board{
     height: 500px;
     clear: left;
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   aside{
@@ -625,7 +646,7 @@ aside .container{
 
 
 /* 2nd breakpont for bigger screens starts here*/
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1024px) {
 
 	.wrap, .services {
 		width: 90%;
@@ -690,38 +711,99 @@ aside .container{
 }
 /*2nd breakpont ends here*/
 
-
 /*3rd breakpoint starts here*/
 @media only screen and (min-width: 1200px) {
+  nav a {
+    text-align: center;
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+  }
+  
+  .dropdown {
+      float: left;
+      overflow: hidden;
+      font-size:20px;
+      text-decoration: none;
+  }
+  
+  .dropdown .dropbtn {
+      font-size: 20px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 1em;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+  }
+  /*3rd breakpoint ends here*/
+
+
+
+/*4th breakpoint starts here*/
+@media only screen and (min-width: 1400px) {
 nav a {
   text-align: center;
   display: block;
-  padding: 2em;
-  font-size: 25px;
+  padding: 1em;
+  font-size: 23px;
 }
 
 .dropdown {
     float: left;
     overflow: hidden;
-    font-size:25px;
+    font-size:23px;
     text-decoration: none;
 }
 
 .dropdown .dropbtn {
-    font-size: 25px;  
+    font-size: 23px;  
     border: none;
     outline: none;
     color: white;
-    padding: 2em;
+    padding: 1em;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 }
-/*3rd breakpoint ends here*/
+/*4th breakpoint ends here*/
+
+/*5th breakpoint starts here*/
+@media only screen and (min-width: 1600px) {
+  nav a {
+    text-align: center;
+    display: block;
+    padding: 1.2em;
+    font-size: 25px;
+  }
+  
+  .dropdown {
+      float: left;
+      overflow: hidden;
+      font-size:25px;
+      text-decoration: none;
+  }
+  
+  .dropdown .dropbtn {
+      font-size: 25px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 1.2em;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+  }
+  /*5th breakpoint ends here*/
+
+
    
 /*Breakpoint for design only for small screens*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
 
   nav a:not(:first-child), .dropdown .dropbtn {
